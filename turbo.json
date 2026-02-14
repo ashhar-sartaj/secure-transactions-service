@@ -12,6 +12,9 @@
             "outputs": [
                 "dist/**",
                 ".next/**"
+            ],
+            "env": [
+                "MASTER_KEY_HEX"
             ]
         },
         "lint": {},

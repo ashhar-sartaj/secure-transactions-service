@@ -1,4 +1,4 @@
-import { createServer } from '../src/server.js'
+import { createServer } from '../dist/server.js';
 //this index.ts is mainly built for vercel deployment. so we define the serverless entry point.
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 

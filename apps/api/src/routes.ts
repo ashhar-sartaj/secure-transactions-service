@@ -1,8 +1,8 @@
 import { encryptTnx, decryptTnx, txSecureRecord } from "@repo/crypto";
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
 import type { FastifyInstance } from "fastify";
 import { recordsLibrary } from "./storage.js";
-dotenv.config();
+// dotenv.config();
 
 //here the fastifyInstance is the app we created as a instance of fastify by: app = fastify() in server.ts
 //then we will inject all our routes to that instance, means to app via app.register(routes)

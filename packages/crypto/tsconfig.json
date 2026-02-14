@@ -1,10 +1,12 @@
 {
     "compilerOptions": {
         "target": "ES2022",
-        "module": "NodeNext",
-        "moduleResolution": "NodeNext",
+        "module": "CommonJS",
+        "moduleResolution": "Node",
         "strict": true,
         "skipLibCheck": true,
+        "outDir": "dist",
+        "esModuleInterop": true,
         "types": ["Node"]
     },
     "include": [

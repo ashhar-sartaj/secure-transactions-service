@@ -6,7 +6,7 @@ let app: ReturnType<typeof createServer> | null = null
 export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (!app) {
         app = createServer();
-        app.ready();
+        await app.ready();
     }
 
     // Forward request to Fastify

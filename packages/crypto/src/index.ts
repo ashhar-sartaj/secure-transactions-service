@@ -1,5 +1,4 @@
-import crypto from 'node:crypto';
-
+import * as crypto from 'crypto';
 export type txSecureRecord = {
     //this serves as the blueprint for all our enteries/payload including their encrypted keys and data
     id: string,

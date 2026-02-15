@@ -16,7 +16,7 @@ app.get('/', () => {
     return {status: 'ok', content: greeting() }
 })
 
-const port = 4000;
+const port = Number(process.env.PORT) || 4000;
 app.listen({port, host:'0.0.0.0'}, () => {
     console.log('app is running on port: ', port);
 })

@@ -28,6 +28,9 @@ yarn-error.log*
 .env.local
 .env.*.local
 
+# pnpm-lock.yaml should be COMMITTED
+!pnpm-lock.yaml
+
 # OS
 .DS_Store
 Thumbs.db

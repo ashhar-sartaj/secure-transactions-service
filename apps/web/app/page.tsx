@@ -2,9 +2,9 @@
 import Image from "next/image";
 // import { helloCrypto } from '@repo/crypto'
 import { useEffect, useState } from "react";
-import { parse } from "path";
+// import { parse } from "path";
 import axios from "axios";
-import {greeting} from '@repo/crypto'
+// import {greeting} from '@repo/crypto'
 
 //nextjs as built in featre  of loading environment variables. So, we dont require dotenv package
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000'

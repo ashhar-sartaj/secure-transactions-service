@@ -3,9 +3,12 @@
 - **Turborepo**: Orchestrates all 3 workspaces (**web**, **api**, **crypto**)
 - **pnpm workspaces**: Enables shared usage of `@repo/crypto` across workspaces
 
+![Architecture Diagram](architecture.jpg)
+
 ---
 
 ## Monorepo Structure
+```bash
 secure-transactions-service/
 ├── turbo.json # Build orchestration
 ├── pnpm-workspace.yaml # Workspace defined here
@@ -14,6 +17,8 @@ secure-transactions-service/
 └── apps/
 ├── web/ # Next.js frontend
 └── api/ # Fastify backend
+```
+---
 
 ## API Endpoints
 - **POST** `/tx/encrypt`  
@@ -36,7 +41,9 @@ cd secure-transactions-service
 ```
 
 ### 2. Clone the repository
+```bash
 pnpm install
+```
 
 ### 3. Create your master key
 inside:
@@ -53,5 +60,5 @@ From the root of the project:
 pnpm dev
 ```
 ### 5. Running URLs
-Frontend: http://localhost:3000
-Backend: http://localhost:4000
+- Frontend: http://localhost:3000
+- Backend: http://localhost:4000
